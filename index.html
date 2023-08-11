@@ -18,69 +18,76 @@
         </div>
         <button type="submit">Login</button>
     </nav>
-    <header>
-        <h1><b>BOOTCAMP DNC</b></h1>
-        <p>Esse será um evento exclusivo para todos os alunos<br>
-           da <b>DNC</b>, que querem <span><b>acelerar a carreira</b></span> com uma <br>
-           semana intensiva de conteúdo de mercado entre<br>
-           <span><b>BACK-END, FRONT-END & BANCO DE DADOS.</b></span>
-        </p>
-    </header>
-    
+
+    <!-- CABEÇALHO -->
+
+    <main>
+        <header>
+            <h1><b>BOOTCAMP DNC</b></h1>
+            <p>Esse será um evento exclusivo para todos os alunos<br>
+               da <b>DNC</b>, que querem <span><b>acelerar a carreira</b></span> com uma <br>
+               semana intensiva de conteúdo de mercado entre<br>
+            <span><b>BACK-END, FRONT-END & BANCO DE DADOS.</b></span>
+            </p>
+        </header>
+
     <!-- FORMULÁRIO -->
     
-    <main>
-        <form action="" method="post">
-            <div class="label-input">
-                <label>Nome:</label>
-                <input type="text" placeholder="" name="">
-            </div>
-            <div class="label-input">
-                <label>Sobrenome:</label>
-                <input type="text" placeholder="" name="">
-            </div>
+        <section>
+            <form action="https://formspree.io/f/xjvqyowo" method="POST">
+                <div class="label-input">
+                    <label class="pLabel">Nome:</label>
+                    <input class="cxIn" type="text" placeholder="Nome" name="Nome">
+                </div>
+                <div class="label-input">
+                    <label class="pLabel">Sobrenome:</label>
+                    <input class="cxIn" type="text" placeholder="Sobrenome" name="Sobrenome">
+                </div>
             
             <!-- CHECKBOX -->
 
-            <section class="label-input">
-                <label>Área de Interesse:</label>
-                    <div>
-                        <input type="checkbox" name="Front-End">
-                        <label>Front-End</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="Back-End">
-                        <label>Front-End</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="Banco de Dados">
-                        <label>Banco de Dados</label>
-                    </div>
-                </section>
+                <div class="label-input">
+                    <label class="pLabel">Área de Interesse:</label>
+                        <div id="checkboxes">
+                            <div class="checks">
+                                <input type="checkbox" name="Front-End" value="Sim">
+                                <label>Front-End</label>
+                            </div>
+                            <div class="checks">
+                                <input type="checkbox" name="Back-End" value="Sim">
+                                <label>Front-End</label>
+                            </div>
+                            <div class="checks">
+                                <input type="checkbox" name="Banco de Dados" value="Sim">
+                                <label>Banco de Dados</label>
+                            </div>
+                        </div>
+                </div>
                 
             <!-- INPUTS -->
 
-            <div class="label-input">
-                <label>E-mail:</label>
-                <input type="email" placeholder="Insira seu e-mail aqui" name="E-mail">
-            </div>
-            <div class="label-input">
-                <label>Telefone:</label>
-                <input type="tel" placeholder="(XX) X XXXX-XXXX" name="Telefone">
-            </div>
-            <div class="label-input">
-                <label>Insira uma frase criativa aqui:</label>
-                <input type="text" placeholder="Qual frase criativa você gostaria de falar? :)" name="Frase-criativa">
-            </div>
-            <button type="submit">Inscreva-se</button>
-        </form>
+                <div class="label-input">
+                    <label class="pLabel">E-mail:</label>
+                    <input class="cxIn" type="email" placeholder="Insira seu e-mail aqui" name="E-mail">
+                </div>
+                <div class="label-input">
+                    <label class="pLabel">Telefone:</label>
+                    <input class="cxIn" type="tel" placeholder="(XX) X XXXX-XXXX" name="Telefone">
+                </div>
+                <div class="label-input">
+                    <label class="pLabel">Insira uma frase criativa aqui:</label>
+                    <input class="cxIn" type="text" placeholder="Qual frase criativa você gostaria de falar? :)" name="Frase-criativa">
+                </div>
+                <button type="submit">Inscreva-se</button>
+            </form>
+        </section>
     </main>
 
     <!-- RODAPÉ -->
 
     <footer>
-        <section>
-            <div>
+        <section id="fColumns">
+            <div id="escolas" class="fLinks">
                 <h3>Escolas</h3>
                 <a href="https://www.escoladnc.com.br/formacao-em-tecnologia" target="_blank">Formação em Tecnologia</a>
                 <a href="https://www.escoladnc.com.br/formacao-em-marketing/" target="_blank">Formação em Marketing</a>
@@ -88,16 +95,16 @@
                 <a href="https://www.escoladnc.com.br/formacao-em-projetos" target="_blank">Formação em Projetos</a>
                 <a href="https://www.escoladnc.com.br/formacao-em-produto" target="_blank">Formação em Produto</a>
             </div>
-            <div>
+            <div id="sobre" class="fLinks">
                 <h3>Sobre a DNC</h3>
-                <a href="https://www.escoladnc.com.br/sobre-nos">História</a>
-                <a href="https://www.escoladnc.com.br/sobre-nos">Missão e Valores</a>
-                <a href="https://carreiradnc.traffit.com/career/">Trabalhe Conosco</a>
-                <a href="https://www.escoladnc.com.br/blog/">Conteúdo Gratuito</a>
+                <a href="https://www.escoladnc.com.br/sobre-nos" target="_blank">História</a>
+                <a href="https://www.escoladnc.com.br/sobre-nos" target="_blank">Missão e Valores</a>
+                <a href="https://carreiradnc.traffit.com/career/" target="_blank">Trabalhe Conosco</a>
+                <a href="https://www.escoladnc.com.br/blog/" target="_blank">Conteúdo Gratuito</a>
             </div>
-            <div>
+            <div id="copyright" class="fLinks">
                 <p>© 2022 DTC Treinamentos & Consultoria<br>
-                 LTDA | CNPJ: 27.995.577/0001-37 | R.<br> 
+                 LTDA | CNPJ: 27.995.577/0001-37 | R.<br>
                  Justino Cobra, 61 – Vila Ema | São José dos<br> 
                  Campos – SP | CEP 12243-030</p>
             </div>
